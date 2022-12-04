@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 0.9em;
+}
+
+.body {
+    display: flex;
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-size: contain;
+}
+
+.main {
+    height: 550px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    background-image: url('./images/illustration-hero.svg');
+    background-size: cover;
+    flex: 0.3;
+    border-radius: 20px 20px 0 0;
+}
+
+.info {
+    flex: 0.05;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    padding: 2em 2em 1em;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 1em 1em gray;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 0.4em 1em;
+    border-radius: 10px;
+}
+
+#container {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px 0;
+}
+
+#price {
+    margin: 0.2em 0;
+    margin-left: -1em;
+}
+
+img {
+    flex: 0.2;
+    max-width: 2.8em;
+    align-self: center;
+    border-radius: 100%;
+    margin-right: 1em;
+}
+
+p {
+    flex: 0.4;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+
+#container-text {
+    margin: 0;
+    flex: 0.4;
+    font-size: 15px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 600;
+    align-self: center;
+    display: flex;
+    justify-content: end;
+}
+
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;  
+    padding: 1em 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    box-shadow: 0 0.8em 1.8em gray;
+}
+
+
+#text {
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.mouse:hover {
+    cursor: pointer;
+}
+
+#container-text:hover {
+    text-decoration: none;
+}
+
+#text:hover {
+    color: black;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 0.8em;
+        font-weight: 500;
+           
+    }
+
+    .main {
+        width: 90vw;
+    }
+
+    .info {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #price {
+        margin-left: 0.1em;
+    }
+}
